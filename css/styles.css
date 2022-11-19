@@ -19,6 +19,7 @@ body {
   --grey-clr: #ffffff99;
   --grey1-clr: #757575;
   --white1-clr: #f5f4fa;
+  --socials: #afb1b8;
 }
 
 .font1 {
@@ -35,6 +36,7 @@ body {
   line-height: 1;
   text-align: center;
   color: var(--black-clr);
+  margin-bottom: 50px;
 }
 
 .font3 {
@@ -43,6 +45,13 @@ body {
   color: var(--black-clr);
   margin-bottom: 10px;
   margin-top: 30px;
+}
+
+.font3a {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--white-clr);
+  margin-bottom: 20px;
 }
 
 .font4 {
@@ -74,6 +83,7 @@ body {
 .font8 {
   font-size: 16px;
   line-height: 1.88;
+  color: var(--grey1-clr);
 }
 
 .font9 {
@@ -104,10 +114,13 @@ body {
   text-decoration: none;
 }
 
+.links1 {
+  text-decoration: none;
+}
+
 .links:hover {
   color: var(--blue-clr);
 }
-
 
 .links:focus {
   color: var(--blue-clr);
@@ -150,8 +163,9 @@ body {
 
 .button1-style:hover {
   background: var(--blue-clr);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); */
+  box-shadow: -3px 3px 5px -3px rgba(0, 0, 0, 0.8);
   border-radius: 4px;
   font-family: inherit;
   font-style: normal;
@@ -164,8 +178,9 @@ body {
 
 .button1-style:focus {
   background: var(--blue-clr);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); */
+  box-shadow: -3px 3px 5px -3px rgba(0, 0, 0, 0.8);
   border-radius: 4px;
   font-family: inherit;
   font-style: normal;
@@ -207,8 +222,8 @@ body {
 }
 
 .footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
   background: var(--black1-clr);
 }
 
@@ -252,7 +267,7 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  padding: 30px;
+  padding-block: 30px;
 }
 
 .flex-2 {
@@ -281,11 +296,6 @@ body {
   flex-direction: column;
   gap: 50px;
   align-items: center;
-}
-
-.section-1 {
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .section-2 {
@@ -332,7 +342,7 @@ body {
 
 .background {
   background-color: var(--white-clr);
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .background1 {
@@ -352,6 +362,11 @@ img {
   flex-basis: calc((100% - 60px) / 3);
 }
 
+.li-item:hover {
+  box-shadow: -3px 3px 5px -3px rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+
 .envelope-icon {
   width: 16px;
   height: 12px;
@@ -366,32 +381,24 @@ img {
   fill: var(--grey1-clr);
 }
 
-.antenna-icon {
-  width: 70px;
-  height: 70px;
-  
-}
-
-.clock-icon {
+.our-attributes-icons {
   width: 70px;
   height: 70px;
 }
 
-.diagram-icon {
-  width: 70px;
-  height: 70px;
+.links:hover .envelope-icon {
+  fill: var(--blue-clr);
 }
 
-.astronaut-icon {
-  width: 70px;
-  height: 70px;
+.links:hover .smartphone-icon {
+  fill: var(--blue-clr);
 }
 
-.links:hover .envelope-icon{
-   fill: var(--blue-clr);
+.links:focus .envelope-icon {
+  fill: var(--blue-clr);
 }
 
-.links:hover .smartphone-icon{
+.links:focus .smartphone-icon {
   fill: var(--blue-clr);
 }
 
@@ -411,63 +418,139 @@ img {
 .icon-position2 {
   display: flex;
   align-items: center;
-  gap: 22px;
   justify-content: center;
-  padding: 16px 32px 18px 32px;
+  padding-inline: 32px;
 }
 
-.instagram-icon {
+.icon-position2a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-media-icons {
   width: 20px;
   height: 20px;
-  fill:var(--grey1-clr);
+  fill: var(--socials);
 }
 
-.twitter-icon {
+.social-media-icons1 {
   width: 20px;
   height: 20px;
-  fill:var(--grey1-clr);
-}
-
-.facebook-icon {
-  width: 20px;
-  height: 20px;
-  fill:var(--grey1-clr);
-}
-
-.linkedin-icon {
-  width: 20px;
-  height: 20px;
-  fill:var(--grey1-clr);
-}
-
-.instagram-icon:hover {
-  fill:var(--white-clr);
-  border-radius: 50%;
-  background-color: var(--blue-clr);
+  fill: var(--white-clr);
 }
 
 .icon-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
+}
+
+.icon-background1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+.icon-background1:hover {
+  background-color: var(--blue-clr);
 }
 
 .icon-background:hover {
   border-radius: 50%;
   background-color: var(--blue-clr);
+  fill: var(--white-clr);
+}
+
+.icon-background:hover .social-media-icons {
+  fill: var(--white-clr);
+}
+
+.icon-background:focus {
+  border-radius: 50%;
+  background-color: var(--blue-clr);
+  fill: var(--white-clr);
+}
+
+.icon-background:focus .social-media-icons {
+  fill: var(--white-clr);
+}
+
+.clients-icons {
+  width: 106px;
+  height: 60px;
+  fill: var(--socials);
+}
+
+.our-clients-border {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--socials);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-clients-border:hover {
+  border-color: var(--blue-clr);
+}
+
+.our-clients-border:hover .clients-icons {
+  fill: var(--blue-clr);
+}
+
+.our-clients-border:focus {
+  border-color: var(--blue-clr);
+}
+
+.our-clients-border:focus .clients-icons {
+  fill: var(--blue-clr);
 }
 
 /********************/
 
 .work {
-  background: grey
+  width: 206px;
+  height: 80px;
+  /* background: red; */
+  margin-top: 72px;
+  margin-bottom: 100px;
 }
 
-.work1 {
-  background: red;
-  padding: 16px 32px 18px 32px;
+.footer-position {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  justify-content: flex-start;
 }
 
-.work2 {
-  background: red;
+.footer-socials-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socials-background {
+  width: 44px;
+  height: 44px;
+  /* border-radius: 50%; */
+  background-color: var(--grey1-clr);
+}
+
+.footer-social-media-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-clr);
+}
+
+.our-team-shadow {
+  box-shadow: -3px 3px 5px -3px rgba(0, 0, 0, 0.8);
 }
