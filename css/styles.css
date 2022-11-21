@@ -206,13 +206,13 @@ body {
 }
 
 .main-section-container {
-  max-height: 600px;
   background-color: var(--black1-clr);
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(#2f303a66, #2f303a66),
     url(../images/main-background.jpg);
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .footer-container {
@@ -355,6 +355,7 @@ img {
 
 .li-item:hover {
   box-shadow: -3px 3px 5px -3px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   scale: 1.05;
   transition: 0.5s;
 }
@@ -540,5 +541,5 @@ img {
 }
 
 .our-team-shadow {
-  box-shadow: -3px 3px 5px -3px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
